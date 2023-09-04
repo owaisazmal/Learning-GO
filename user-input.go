@@ -11,5 +11,5 @@ func main() {
 	fmt.Println("Enter Last Name: ")
 	fmt.Scan(&lName)
 
-	fmt.Print("Full Name is: " + fName + " " + lName)
+	fmt.Print("Full Name is: " + fName + " " + lName) //Commit
 }
