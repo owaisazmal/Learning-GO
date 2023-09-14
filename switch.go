@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-
+// use fallthrough to remove break;
 func main(){
 	switch 1{
 	case 1, 5, 10:
