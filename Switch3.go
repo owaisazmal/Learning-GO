@@ -14,6 +14,6 @@ func main(){
 	case string:
 		fmt.Println("i is an String")
 	default:
-		fmt.Println("i is an another type")
+		fmt.Println("i is an another type")		//change
 	}
 }
