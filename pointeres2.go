@@ -7,7 +7,7 @@ func main(){
 	fmt.Println(ms)
 	ms = new(myStruct)		//&myStruct{foo: 50}		//same thing
 	(*ms).foo = 50
-	fmt.Println(ms)
+	fmt.Println(ms.foo)
 }
 
 type myStruct struct{
