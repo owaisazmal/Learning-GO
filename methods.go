@@ -18,7 +18,7 @@ type greeter struct{		value creator
 // }	
 func (g greeter)greet(){		//value reciever
 	fmt.Println(g.greeting, g.name)
-
-func (g *greeter)greet(){		//pointer reciever
-	fmt.Println(g.greeting, g.name)
 }
+// func (g *greeter)greet(){		//pointer reciever
+// 	fmt.Println(g.greeting, g.name)
+// }
