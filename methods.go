@@ -9,7 +9,7 @@ func main() {
 	}
 	g.greet()		//method invocation
 }
-type greeter struct{		value creator
+type greeter struct{		//value creator
 	greeting string
 	name string
 }
