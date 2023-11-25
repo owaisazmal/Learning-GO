@@ -60,23 +60,24 @@ package main
 
 //****************Q6*******************
 
-//NOTE: ONLY WORKS IN ECLIPSE BECAUSE OF GOLANG SPECIFICATIONS
-//go get -u github.com/mohae/deepcopy
 
-import (
-	"fmt"
-	"github.com/pkg/go-stream" 
-  )
-  
-  func main() {
-	require (
-	  github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 
-	  github.com/pkg/go-stream v1.0.0
-	)
-	orderedArray(10)
-  }
-  
-  func orderedArray(size int) []int {
-	return gostream.IntStream(0, size).ToArray()
-  }
-  
+
+import "fmt"
+
+func orderedArray(size int) []int {
+
+    arr := make([]int, size)
+
+    for i := 0; i < size; i++ {
+        arr[i] = i
+    }
+
+    return arr
+}
+
+func main() {
+
+    res := orderedArray(10)
+    fmt.Println(res) 
+
+}
